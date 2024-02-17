@@ -106,9 +106,9 @@ app.get('/topics', async (req, res) => {
     }
 });
 // Route to get all comments of a specific topic
-app.get('/comments', async (req, res) => {
+app.get('/comments/:topicId', async (req, res) => {
     try {
-        const { topicId } = req.body;
+        const { topicId } = req.params;
         const comments = await Comment.find({ topicId });
         res.status(200).json(comments);
     } catch (err) {
