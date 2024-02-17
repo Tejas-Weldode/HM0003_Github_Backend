@@ -22,7 +22,7 @@ const AtlasURL =
     process.env.MONGO_USERNAME +
     ":" +
     process.env.MONGO_PASSWORD +
-    "@cluster0.bpygxdr.mongodb.net/mydatabase?retryWrites=true&w=majority";
+    "@cluster0.pqtuqzf.mongodb.net/mydb?retryWrites=true&w=majority";
 mongoose.connect(AtlasURL);
 
 
