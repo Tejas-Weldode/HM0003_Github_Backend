@@ -29,7 +29,7 @@ mongoose.connect(AtlasURL);
 
 
 // Route to say hello
-app.get("/", async (req, res) => {
+app.get("/sayHello", async (req, res) => {
     res.status(201).send("<h1>Hello I am GeekSamudaay backend RUNNING...</h1>");
 });
 // Route to create a new user
