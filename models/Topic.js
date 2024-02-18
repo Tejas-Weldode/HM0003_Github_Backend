@@ -1,26 +1,30 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const topicSchema = new mongoose.Schema({
     author: {
         type: String,
-        required: true
+        required: true,
     },
     title: {
         type: String,
-        required: true
+        required: true,
     },
     description: {
         type: String,
-        required: true
+        required: true,
     },
     image: {
-        type: String
+        type: String,
     },
     createdAt: {
         type: Date,
-        default: Date.now
-    }
+        default: Date.now,
+    },
+    fund: {
+        type: Boolean,
+        defaut: false,
+    },
 });
 
-const Topic = mongoose.model('Topic', topicSchema);
+const Topic = mongoose.model("Topic", topicSchema);
 export default Topic;
