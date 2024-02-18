@@ -33,4 +33,4 @@ This app contains various routes to perform tasks like
 
 ## Video Url
 
-[Link to Demo Video](video_url)
+[Link to Demo Video](https://youtu.be/yMy6bwltcus)
