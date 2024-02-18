@@ -4,6 +4,7 @@ import express from "express";
 import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import cors from "cors";
+// models
 import User from "./models/User.js";
 import Topic from "./models/Topic.js";
 import Comment from "./models/Comment.js";
